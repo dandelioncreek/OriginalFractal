@@ -7,7 +7,7 @@ public void draw(){
 }
 public void myFractal(int x, int y, int r){
   if (r<=20)
-    circle(x, y, r);
+    ellipse(x, y, r, r);
   else {
     myFractal(x,y-(r/2), r/2);
     myFractal(x, y+(r-2), r/2);
